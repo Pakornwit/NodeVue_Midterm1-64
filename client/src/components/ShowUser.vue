@@ -1,8 +1,10 @@
 <template>
   <div>
-    <h1>Show User</h1>
+    <h1>ข้อมูลทหาร</h1>
     <p>id: {{ userId }}</p>
+    <p>เลขบัตรประจำตัวประชาชน: {{user.code}}</p>
     <p>ชื่อ - นามสกุล {{ user.name }} - {{ user.lastname }}</p>
+    <p>ยศตำแหน่ง: {{user.rank}}</p>
     <p>email: {{ user.email }}</p>
     <p>password: {{ user.password }}</p>
   </div>

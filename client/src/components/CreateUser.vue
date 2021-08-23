@@ -15,7 +15,7 @@
         <p>เลขบัตรประจำตัวประชาชน: {{user.code}}</p>
         <p>ชื่อ: {{user.name}}</p>
         <p>นามสกุล: {{user.lastname}}</p>
-        <p>ยศตำแหน่ง: {{user.email}}</p>
+        <p>ยศตำแหน่ง: {{user.rank}}</p>
         <p>email: {{user.email}}</p>
         <p>Password: {{user.password}}</p>
         
