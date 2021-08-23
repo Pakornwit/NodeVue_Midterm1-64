@@ -1,19 +1,24 @@
 <template>
 <div>
-    <h1>Edit User</h1>
+    <h1>แก้ไขข้อมูลทหาร</h1>
     <form v-on:submit.prevent = "editUser">
-        <p>name: <input type="text" v-model="user.name"></p>
-        <p>lastname: <input type="text" v-model="user.lastname"></p>
+        <p>เลขบัตรประจำตัวประชาชน: <input type="text" v-model="user.code"></p>
+        <p>ชื่อ: <input type="text" v-model="user.name"></p>
+        <p>นามสกุล: <input type="text" v-model="user.lastname"></p>
+        <p>ยศตำแหน่ง: <input type="text" v-model="user.rank"></p>
         <p>email: <input type="text" v-model="user.email"></p>
-        <p>password: <input type="text" v-model="user.password"></p>
-        <p><button type="submit">edit user</button></p>
+        <p>Password: <input type="text" v-model="user.password"></p>
+        <p><button type="submit">แก้ไขข้อมูล</button></p>
     </form>
     <hr>
     <div>
-        <p>name: {{user.name}}</p>
-        <p>lastname: {{user.lastname}}</p>
+        <p>เลขบัตรประจำตัวประชาชน: {{user.code}}</p>
+        <p>ชื่อ: {{user.name}}</p>
+        <p>นามสกุล: {{user.lastname}}</p>
+        <p>ยศตำแหน่ง: {{user.email}}</p>
         <p>email: {{user.email}}</p>
-        <p>password: {{user.password}}</p>
+        <p>Password: {{user.password}}</p>
+        
     </div>
 </div>
 </template>
@@ -23,8 +28,10 @@ export default {
     data(){
         return{
             user:{
+                code: '',
                 name: '',
                 lastname: '',
+                rank: '',
                 email: '',
                 password: '',
                 status: 'active'
